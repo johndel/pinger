@@ -24,5 +24,5 @@ loop do
   if status_code != 200
     write_log(status_code)
   end
-  sleep(1)
+  sleep(60)
 end
