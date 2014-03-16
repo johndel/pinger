@@ -20,9 +20,9 @@ def write_log(status_code)
 end
 
 loop do
-  status_code = check_code() rescue 666
+  status_code = check_code(@your_site) rescue 666
   if status_code != 200
     write_log(status_code)
   end
-  sleep(60)
+  sleep(1)
 end
